@@ -1,0 +1,77 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 40px 60px;
+    }
+
+.login-btn { 
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+    padding: 14px 26px;  
+    font-size: 16px;    
+    color: white;
+    border-radius: 20px;
+    background-color: #000000;
+}
+
+.addbtn {
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 14px;  
+    width: 95%;
+    font-size: 16px;    
+    border-radius: 40px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.container {
+  background-color: #b2ff66; /* The lime green color */
+  border-radius: 40px;      /* This creates the heavy rounded corners */
+  padding: 40px;            /* This creates the space between the edge and the text */
+  margin: 20px auto;        /* Centers the platform on the screen */
+  width: 90%;               /* Makes it wide but not touching the screen edges */
+  max-width: 800px;         /* Prevents it from getting too wide on big monitors */
+  height: 400px;
+}
+.list {
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+    margin-top: 20px;
+}
+
+.list li {
+    display: flex;
+    justify-content: space-between; /* Pushes text left, circle right */
+    align-items: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    border-bottom: 1px solid rgba(0,0,0,0.1); /* Optional: thin line between tasks */
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border: 3px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.circle.filled {
+    background-color: black;
+}

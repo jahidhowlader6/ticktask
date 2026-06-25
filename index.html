@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <title>TickTask</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">TickTask.</div>
+        <nav>
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <center>
+            <input class="addbtn" type="text" placeholder="Enter a task">
+            <ul class="list"></ul>
+        </center>
+    </div>
+
+    <script>
+        // Grab elements using YOUR classes
+        const input = document.querySelector('.addbtn');
+        const list = document.querySelector('.list');
+
+        input.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter' && input.value.trim() !== "") {
+                const li = document.createElement('li');
+                
+                li.innerHTML = `
+                    <span>${input.value}</span>
+                    <div class="circle" onclick="this.classList.toggle('filled')"></div>
+                `;
+                
+                list.appendChild(li);
+                input.value = ""; 
+            }
+        });
+    </script>
+
+</body>
+</html>
